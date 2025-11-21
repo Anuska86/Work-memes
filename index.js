@@ -77,6 +77,7 @@ function getSingleMeme() {
 }
 
 // render memes
+
 function renderMeme() {
   const memeObject = getSingleMeme();
   if (!memeObject) {
@@ -85,27 +86,38 @@ function renderMeme() {
   }
 
   memeModalInner.innerHTML = `
-    <div class="meme-content">
-      <img 
-      class="work-meme-img" 
-      src="./images/${memeObject.image}"
-      alt="${memeObject.alt}"
-      >
-      <div class="meme-actions">
-        <a href="./images/${memeObject.image}" 
-           download="${memeObject.alt || "work-meme"}" 
-           class="action-btn download-btn">
-          ⬇️ Download Image
-        </a>
-        <button class="action-btn copy-btn" data-image-src="./images/${
-          memeObject.image
-        }">
-          📋 Copy Link
-        </button>
+    <div class="loading-message">
+      <h3>Loading Meme...</h3>
       </div>
-    </div>
-    `;
+  `;
   memeModal.style.display = "flex";
+
+  const imagePath = `./images/${memeObject.image}`;
+
+  const img = new Image();
+  img.src = imagePath;
+
+  img.onload = function () {
+    memeModalInner.innerHTML = `
+      <div class="meme-content">
+        <img 
+        class="work-meme-img" 
+        src="${imagePath}"
+        alt="${memeObject.alt}"
+        >
+        <div class="meme-actions">
+          <a href="${imagePath}" 
+             download="${memeObject.alt || "work-meme"}" 
+             class="action-btn download-btn">
+            ⬇️ Download Image
+          </a>
+          <button class="action-btn copy-btn" data-image-src="${imagePath}">
+            📋 Copy Link
+          </button>
+        </div>
+      </div>
+    `;
+  };
 }
 
 //Highlight the choice
