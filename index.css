@@ -2,9 +2,9 @@ html,
 body {
   margin: 0;
   font-family: "Karla", sans-serif;
-  background-image: linear-gradient(to bottom right, #fff0f5, #f9e4e4);
+  background-image: linear-gradient(to bottom right, #e8f4f8, #f0f8ff);
   background-attachment: fixed;
-  color: #5d5c61;
+  color: #3f51b5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,33 +21,33 @@ h3 {
 
 h1,
 h2 {
-  color: #eed6d3;
+  color: #c5cae9;
   margin: 0;
 }
 
 h1 {
   font-size: 32px;
-  color: #fffcf9;
+  color: #ffffff;
   margin: 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   font-size: 18px;
-  color: #fffcf9;
+  color: #c5cae9;
   margin: 0;
 }
 
 h3 {
   margin: 25px;
-  color: #f9906f;
+  color: #ff9800;
   font-size: 22px;
 }
 
 /* layout */
 
 header {
-  background-color: #ffc7d4;
+  background-color: #3f51b5;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
@@ -61,10 +61,10 @@ header {
   padding: 15px 0 15px 0;
 }
 
-.memeow-img {
+.office-logo-img {
   width: 88px;
   border-radius: 50%;
-  border: 3px solid #fffcf9;
+  border: 3px solid #ffffff;
 }
 
 .controls-container {
@@ -78,9 +78,7 @@ header {
 /* controls */
 
 .emotion-radios {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid #a2e0c7;
+  border: 2px solid #8bc34a;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -90,7 +88,7 @@ header {
   align-items: center;
   border-bottom: 1px solid #e0e0e0;
   padding: 8px 12px;
-  background-color: #fffcf9;
+  background-color: #ffffff;
   transition: background-color 0.2s;
 }
 
@@ -102,8 +100,8 @@ label {
 }
 
 .highlight {
-  background-color: #fff0f5;
-  color: #5d5c61;
+  background-color: #e8f4f8;
+  color: #3f51b5;
   font-weight: 800;
 }
 
@@ -114,7 +112,7 @@ label {
 input[type="radio"] {
   cursor: pointer;
   transform: scale(1.2);
-  accent-color: #ffc7d4;
+  accent-color: #3f51b5;
 }
 
 .gifs-check {
@@ -131,8 +129,8 @@ input[type="radio"] {
 }
 
 .get-image-btn {
-  background-color: #a2e0c7;
-  color: #5d5c61;
+  background-color: #8bc34a;
+  color: #3f51b5;
   padding: 15px 19px;
   font-size: 24px;
   border: none;
@@ -140,17 +138,17 @@ input[type="radio"] {
   margin-bottom: 15px;
   cursor: pointer;
   transition: transform 0.1s, box-shadow 0.1s;
-  box-shadow: 0 4px 0 #7ac7ab;
+  box-shadow: 0 4px 0 #689f38;
 }
 
 .get-image-btn:focus-visible {
-  outline: 4px solid #ffc7d4;
+  outline: 4px solid #3f51b5;
   outline-offset: 3px;
 }
 
 .get-image-btn:active {
   transform: translateY(4px);
-  box-shadow: 0 0px 0 #7ac7ab;
+  box-shadow: 0 0px 0 #689f38;
 }
 /*tablet container*/
 .tablet-container {
@@ -164,7 +162,7 @@ input[type="radio"] {
   border-radius: 40px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   overflow-y: auto;
-  background-color: #fffcf9;
+  background-color: #ffffff;
 }
 
 .tablet-container::after {
@@ -191,8 +189,8 @@ input[type="radio"] {
   width: 480px;
   height: 640px;
   border-radius: 40px;
-  border: 6px solid #f9906f;
-  background-color: #fffcf9;
+  border: 6px solid #ff9800;
+  background-color: #ffffff;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
   z-index: 10;
   overflow: hidden;
@@ -206,7 +204,7 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fffcf9;
+  background-color: #ffffff;
 }
 
 .modal-content-wrapper {
@@ -239,9 +237,9 @@ input[type="radio"] {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.2s;
-  border: 1px solid #f9906f;
-  background-color: #fffcf9;
-  color: #f9906f;
+  border: 1px solid #ff9800;
+  background-color: #ffffff;
+  color: #ff9800;
   font-weight: 600;
 }
 
@@ -249,11 +247,11 @@ input[type="radio"] {
   background-color: #ffc7d4;
 }
 
-.cat-img {
+.work-meme-img {
   max-width: 380px;
   max-height: 460px;
   border-radius: 15px;
-  border: 5px solid #ffc7d4;
+  border: 5px solid #3f51b5;
   object-fit: contain;
 }
 
@@ -262,9 +260,9 @@ input[type="radio"] {
   top: 15px;
   right: 15px;
   z-index: 20;
-  background-color: #f9906f;
+  background-color: #ff9800;
   border: none;
-  color: #fffcf9;
+  color: #ffffff;
   border-radius: 50%;
   padding: 5px 10px;
   font-size: 18px;
@@ -273,8 +271,8 @@ input[type="radio"] {
 }
 
 .meme-modal-close-btn:hover {
-  background-color: #ffc7d4;
-  color: #5d5c61;
+  background-color: #3f51b5;
+  color: #ffffff;
 }
 
 /*responsive*/
@@ -290,7 +288,7 @@ input[type="radio"] {
     flex-direction: column;
   }
 
-  .cat-img {
+  .work-meme-img {
     max-width: 90%;
     max-height: 80%;
   }

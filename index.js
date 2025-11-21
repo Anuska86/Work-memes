@@ -10,9 +10,7 @@ const closeModalBtn = document.getElementById("meme-modal-close-btn");
 
 emotionRadiosDiv.addEventListener("change", highlightCheckedOption);
 
-getImageBtn.addEventListener("click", renderCat);
-
-getImageBtn.addEventListener("click", renderCat);
+getImageBtn.addEventListener("click", renderMeme);
 closeModalBtn.addEventListener("click", closeModal);
 
 memeModalInner.addEventListener("click", (e) => {
@@ -39,70 +37,70 @@ memeModalInner.addEventListener("click", (e) => {
   }
 });
 
-//Get the matching cats
-
-function getMatchingCatsArray() {
+// fetching memes
+function getMatchingMemesArray() {
   if (document.querySelector('input[type="radio"]:checked')) {
     const selectedEmotion = document.querySelector(
       'input[type="radio"]:checked'
     ).value;
     const isOnlyGiftsChecked = onlyGiftsCheckbox.checked;
 
-    const matchingCat = catsData.filter((cat) => {
+    const matchingMemes = memesData.filter((meme) => {
       if (isOnlyGiftsChecked) {
-        return cat.emotionTags.includes(selectedEmotion) && cat.isGif;
+        return meme.emotionTags.includes(selectedEmotion) && meme.isGif;
       } else {
-        return cat.emotionTags.includes(selectedEmotion);
+        return meme.emotionTags.includes(selectedEmotion);
       }
     });
-    return matchingCat;
+    return matchingMemes;
   }
 
   return [];
 }
 
-//fetch a single cat
-
-function getRandomCat(catsArray) {
-  const randomIndex = Math.floor(Math.random() * catsArray.length);
-  return catsArray[randomIndex];
+// get random meme
+function getRandomMeme(memesArray) {
+  const randomIndex = Math.floor(Math.random() * memesArray.length);
+  return memesArray[randomIndex];
 }
 
-function getSingleCat() {
-  const catsArray = getMatchingCatsArray();
+// get single meme
+function getSingleMeme() {
+  const memesArray = getMatchingMemesArray();
 
-  if (catsArray.length === 1) {
-    return catsArray[0];
-  } else if (catsArray.length > 1) {
-    return getRandomCat(catsArray);
+  if (memesArray.length === 1) {
+    return memesArray[0];
+  } else if (memesArray.length > 1) {
+    return getRandomMeme(memesArray);
   } else {
-    console.log("No matching cats found.");
+    console.log("No matching memes found.");
     return null;
   }
 }
 
-function renderCat() {
-  const catObject = getSingleCat();
-  if (!catObject) {
-    console.log("No cat to render");
+// render memes
+function renderMeme() {
+  const memeObject = getSingleMeme();
+  if (!memeObject) {
+    console.log("No meme to render");
     return;
   }
 
   memeModalInner.innerHTML = `
     <div class="meme-content">
       <img 
-      class="cat-img" 
-      src="./images/${catObject.image}"
-      alt="${catObject.alt}"
+      class="work-meme-img" 
+      src="./images/${memeObject.image}"
+      alt="${memeObject.alt}"
       >
       <div class="meme-actions">
-        <a href="./images/${catObject.image}" 
-           download="${catObject.alt || "cat-meme"}" 
+        <a href="./images/${memeObject.image}" 
+           download="${memeObject.alt || "work-meme"}" 
            class="action-btn download-btn">
           ⬇️ Download Image
         </a>
         <button class="action-btn copy-btn" data-image-src="./images/${
-          catObject.image
+          memeObject.image
         }">
           📋 Copy Link
         </button>
@@ -126,23 +124,21 @@ function highlightCheckedOption(e) {
   parentContainer.classList.add("highlight");
 }
 
-//Fetch the emotions
+// fetching emotions
+function getEmotionsArray(memes) {
+  const memeEmotions = [];
 
-function getEmotionsArray(cats) {
-  const catsEmotions = [];
-
-  for (let cat of cats) {
-    for (let emotion of cat.emotionTags) {
-      catsEmotions.push(emotion);
+  for (let meme of memes) {
+    for (let emotion of meme.emotionTags) {
+      memeEmotions.push(emotion);
     }
   }
-  return catsEmotions;
+  return memeEmotions;
 }
 
-//Render the emotions
-
-function renderEmotionsRadios(cats) {
-  const emotions = getEmotionsArray(cats);
+// render emotions radios
+function renderEmotionsRadios(memes) {
+  const emotions = getEmotionsArray(memes);
 
   let radioItemsHtml = "";
 
@@ -159,7 +155,7 @@ function renderEmotionsRadios(cats) {
   emotionRadiosDiv.innerHTML = radioItemsHtml;
 }
 
-renderEmotionsRadios(catsData);
+renderEmotionsRadios(memesData);
 
 // Function to handle link copying
 function copyImageLink(e) {
@@ -170,7 +166,6 @@ function copyImageLink(e) {
   const imagePath = button.dataset.imageSrc;
 
   // Construct the full absolute URL (important for sharing)
-  // This assumes the meme is being served from a known base URL
   const fullUrl = window.location.origin + imagePath.substring(1);
 
   navigator.clipboard
