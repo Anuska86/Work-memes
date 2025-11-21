@@ -1,151 +1,234 @@
 export const memesData = [
+  // --- ANGRY ---
   {
     emotionTags: ["angry"],
     isGif: true,
     image: "angry.gif",
-    alt: "Ira character in flames",
+    alt: "Furious reaction after a meeting runs over the time limit",
   },
   {
     emotionTags: ["angry"],
     isGif: true,
     image: "angry2.gif",
-    alt: "An angry woman",
+    alt: "Angry reaction to a system crash right before a deadline",
+  },
+  {
+    emotionTags: ["angry"],
+    isGif: true,
+    image: "angry3.gif",
+    alt: "Angry reaction to a system crash right before a deadline",
+  },
+  {
+    emotionTags: ["angry"],
+    isGif: true,
+    image: "angry4.gif",
+    alt: "Angry reaction to a system crash right before a deadline",
   },
   {
     emotionTags: ["angry"],
     isGif: false,
     image: "angry.jpg",
-    alt: "A very angry monkey",
+    alt: "A very angry expression due to a last-minute Friday afternoon request",
   },
+
+  // --- BORED ---
+  {
+    emotionTags: ["bored"],
+    isGif: true,
+    image: "bored.gif",
+    alt: "A very bored boss baby",
+  },
+  {
+    emotionTags: ["bored"],
+    isGif: true,
+    image: "bored2.gif",
+    alt: "A very bored cat",
+  },
+  {
+    emotionTags: ["bored"],
+    isGif: true,
+    image: "bored3.gif",
+    alt: "A very bored cat",
+  },
+
+  // --- CONFIDENT ---
   {
     emotionTags: ["confident"],
     isGif: true,
     image: "confident.gif",
+    alt: "Confident reaction after deployment goes smoothly",
   },
   {
     emotionTags: ["confident"],
     isGif: false,
     image: "confident.jpg",
-    alt: "A confident man (photo)",
+    alt: "A confident man after successfully presenting his work",
   },
   {
     emotionTags: ["confident"],
     isGif: true,
     image: "confident2.gif",
-    alt: "Another confident reaction (gif)",
+    alt: "Confident reaction after successfully delegating a difficult task",
   },
+  {
+    emotionTags: ["confident"],
+    isGif: true,
+    image: "confident3.gif",
+    alt: "Confident reaction after successfully delegating a difficult task",
+  },
+
+  // --- CELEBRATION ---
+  {
+    emotionTags: ["party mood"],
+    isGif: true,
+    image: "celebration.gif",
+    alt: "Party mood",
+  },
+  {
+    emotionTags: ["party mood"],
+    isGif: true,
+    image: "celebration2.gif",
+    alt: "Party mood",
+  },
+  {
+    emotionTags: ["party mood"],
+    isGif: true,
+    image: "celebration3.gif",
+    alt: "Party mood",
+  },
+
+  // --- CONFUSED ---
   {
     emotionTags: ["confused"],
     isGif: true,
     image: "confused.gif",
-    alt: "Confused expression (gif)",
+    alt: "Confused expression after hearing new corporate buzzwords",
   },
   {
     emotionTags: ["confused"],
     isGif: false,
     image: "confused.jpg",
-    alt: "Confused expression (photo)",
+    alt: "Confused expression looking at unfamiliar legacy code",
   },
   {
     emotionTags: ["confused"],
     isGif: true,
     image: "confused2.gif",
-    alt: "Confused head tilt (gif)",
+    alt: "Confused head tilt reading a disorganized email thread",
   },
   {
     emotionTags: ["confused"],
     isGif: false,
     image: "confused2.jpg",
-    alt: "Confused head tilt (photo)",
+    alt: "Confused look when asked about the purpose of the current sprint",
   },
+
+  // --- FRUSTRATED ---
   {
-    emotionTags: ["frustrated", "fed-up"],
+    emotionTags: ["frustrated"],
     isGif: true,
-    image: "fed-up.gif",
-    alt: "Fed up reaction (gif)",
+    image: "frustrated.gif",
+    alt: "Frustrated reaction to joining another pointless video call",
   },
   {
-    emotionTags: ["frustrated", "fed-up"],
+    emotionTags: ["frustrated"],
     isGif: false,
-    image: "fed-up.jpg",
-    alt: "Fed up expression (photo)",
+    image: "frustrated.jpg",
+    alt: "Frustrated expression waiting for the required software update to finish",
+  },
+
+  {
+    emotionTags: ["frustrated"],
+    isGif: true,
+    image: "frustrated2.gif",
+    alt: "Extremely fed up with end-of-quarter deadlines and demands",
   },
   {
-    emotionTags: ["frustrated", "fed-up"],
+    emotionTags: ["frustrated"],
     isGif: true,
-    image: "fed-up2.gif",
-    alt: "Very fed up (gif)",
+    image: "frustrated3.gif",
+    alt: "Extremely fed up with end-of-quarter deadlines and demands",
   },
-  {
-    emotionTags: ["frustrated", "fed-up"],
-    isGif: true,
-    image: "fed-up3.gif",
-    alt: "Extremely fed up (gif)",
-  },
+
+  // --- IMPATIENT ---
   {
     emotionTags: ["impatient"],
     isGif: true,
     image: "impacient.gif",
-    alt: "Impatient look (gif)",
+    alt: "Impatiently checking the clock for the start of lunch break",
   },
   {
     emotionTags: ["impatient"],
     isGif: true,
     image: "impacient2.gif",
-    alt: "Tapping foot impatient (gif)",
+    alt: "Tapping foot impatient for critical code review approval",
   },
   {
-    emotionTags: ["lazy", "bored"],
+    emotionTags: ["impatient"],
+    isGif: false,
+    image: "impacient.jpg",
+    alt: "Tapping fingers impatiently waiting for the slow system to load",
+  },
+
+  // --- LAZY ---
+  {
+    emotionTags: ["lazy"],
     isGif: true,
     image: "lazy.gif",
-    alt: "Lazy reaction (gif)",
+    alt: "Lazy reaction during mandatory, non-essential training",
   },
   {
-    emotionTags: ["lazy", "bored"],
+    emotionTags: ["lazy"],
     isGif: false,
     image: "lazy.png",
-    alt: "Laid-back lazy face (png)",
+    alt: "Laid-back, unmotivated face on Monday morning",
   },
+
+  // --- BORED ---
   {
-    emotionTags: ["lazy", "bored"],
+    emotionTags: ["bored"],
     isGif: true,
     image: "lazy2.gif",
-    alt: "Very lazy / uninterested (gif)",
+    alt: "Bored / uninterested during a long company announcement",
   },
+
+  // --- SLEEPY ---
   {
-    emotionTags: ["sleepy", "tired"],
+    emotionTags: ["sleepy"],
     isGif: true,
     image: "sleepy.gif",
-    alt: "Sleepy yawn (gif)",
+    alt: "Sleepy yawn after a heavy post-lunch slump",
   },
   {
-    emotionTags: ["sleepy", "tired"],
+    emotionTags: ["sleepy"],
     isGif: false,
     image: "sleepy.jpg",
-    alt: "Drowsy expression (photo)",
+    alt: "Drowsy expression during an early morning Work From Home video call",
   },
   {
-    emotionTags: ["sleepy", "tired"],
+    emotionTags: ["sleepy"],
     isGif: true,
     image: "sleepy2.gif",
-    alt: "Falling asleep (gif)",
+    alt: "Falling asleep after an all-night crunch-time session",
   },
+
+  // --- STRESSED ---
   {
-    emotionTags: ["stressed", "anxious"],
+    emotionTags: ["stressed"],
     isGif: true,
     image: "stressed.gif",
-    alt: "Stressed out (gif)",
+    alt: "Stressed out trying to meet the project deadline",
   },
   {
-    emotionTags: ["stressed", "anxious"],
+    emotionTags: ["stressed"],
     isGif: false,
     image: "stressed.jpg",
-    alt: "Stressed expression (photo)",
+    alt: "Stressed expression when the main production server goes down",
   },
   {
-    emotionTags: ["stressed", "anxious"],
+    emotionTags: ["stressed"],
     isGif: true,
     image: "stressed2.gif",
-    alt: "Very stressed reaction (gif)",
+    alt: "Very stressed reaction to receiving 50 new emails in under five minutes",
   },
 ];

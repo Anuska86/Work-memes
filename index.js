@@ -68,9 +68,7 @@ function getRandomMeme(memesArray) {
 function getSingleMeme() {
   const memesArray = getMatchingMemesArray();
 
-  if (memesArray.length === 1) {
-    return memesArray[0];
-  } else if (memesArray.length > 1) {
+  if (memesArray.length > 0) {
     return getRandomMeme(memesArray);
   } else {
     console.log("No matching memes found.");
@@ -143,6 +141,8 @@ function renderEmotionsRadios(memes) {
   let radioItemsHtml = "";
 
   const uniqueEmotions = [...new Set(emotions)];
+
+  uniqueEmotions.sort();
 
   for (let emotion of uniqueEmotions) {
     radioItemsHtml += `<div class="radio">
