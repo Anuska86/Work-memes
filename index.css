@@ -154,28 +154,14 @@ input[type="radio"] {
 .tablet-container {
   width: 768px;
   max-width: 90vw;
-  height: 1024px;
-  max-height: 90vh;
+  position: relative;
+  margin: 50px auto;
   position: relative;
   margin: 50px auto;
   border: 15px solid #333;
   border-radius: 40px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  overflow-y: auto;
   background-color: #ffffff;
-}
-
-.tablet-container::after {
-  content: "";
-  display: block;
-  width: 15px;
-  height: 15px;
-  background-color: #ccc;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 /* modal */
