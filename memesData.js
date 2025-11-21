@@ -26,6 +26,30 @@ export const memesData = [
   },
   {
     emotionTags: ["angry"],
+    isGif: true,
+    image: "angry5.gif",
+    alt: "Angry reaction to a system crash right before a deadline",
+  },
+  {
+    emotionTags: ["angry"],
+    isGif: true,
+    image: "angry6.gif",
+    alt: "Angry reaction to a system crash right before a deadline",
+  },
+  {
+    emotionTags: ["angry"],
+    isGif: true,
+    image: "angry7.gif",
+    alt: "Angry reaction to a system crash right before a deadline",
+  },
+  {
+    emotionTags: ["angry"],
+    isGif: true,
+    image: "angry8.gif",
+    alt: "Angry reaction to a system crash right before a deadline",
+  },
+  {
+    emotionTags: ["angry"],
     isGif: false,
     image: "angry.jpg",
     alt: "A very angry expression due to a last-minute Friday afternoon request",
@@ -96,6 +120,18 @@ export const memesData = [
     image: "celebration3.gif",
     alt: "Party mood",
   },
+  {
+    emotionTags: ["party mood"],
+    isGif: true,
+    image: "celebration4.gif",
+    alt: "Party mood",
+  },
+  {
+    emotionTags: ["party mood"],
+    isGif: true,
+    image: "celebration5.gif",
+    alt: "Party mood",
+  },
 
   // --- CONFUSED ---
   {
@@ -114,6 +150,12 @@ export const memesData = [
     emotionTags: ["confused"],
     isGif: true,
     image: "confused2.gif",
+    alt: "Confused head tilt reading a disorganized email thread",
+  },
+  {
+    emotionTags: ["confused"],
+    isGif: true,
+    image: "confused3.gif",
     alt: "Confused head tilt reading a disorganized email thread",
   },
   {
@@ -147,6 +189,24 @@ export const memesData = [
     emotionTags: ["frustrated"],
     isGif: true,
     image: "frustrated3.gif",
+    alt: "Extremely fed up with end-of-quarter deadlines and demands",
+  },
+  {
+    emotionTags: ["frustrated"],
+    isGif: true,
+    image: "frustrated4.gif",
+    alt: "Extremely fed up with end-of-quarter deadlines and demands",
+  },
+  {
+    emotionTags: ["frustrated"],
+    isGif: true,
+    image: "frustrated5.gif",
+    alt: "Extremely fed up with end-of-quarter deadlines and demands",
+  },
+  {
+    emotionTags: ["frustrated"],
+    isGif: true,
+    image: "frustrated6.gif",
     alt: "Extremely fed up with end-of-quarter deadlines and demands",
   },
 
